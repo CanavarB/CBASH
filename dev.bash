@@ -9,7 +9,7 @@ PointerAlignment: Left
 AllowShortIfStatementsOnASingleLine: Always
 AllowShortBlocksOnASingleLine: Always
 AllowShortEnumsOnASingleLine: false
-BreakBeforeBraces: Stroustrups"
+BreakBeforeBraces: Stroustrup"
 
 GIT_IGNORE_CONTENT=".directory
 .vscode/
