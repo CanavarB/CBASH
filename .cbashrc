@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+declare ENABLE_CORE
+declare ENABLE_DEV
+declare ENABLE_SEC
+declare ENABLE_KDE
+declare ENABLE_ROS2
+declare ENABLE_ESPIDF
+
+
+if declare -p ENABLE_CORE &>/dev/null; then
+    source "$(dirname "${BASH_SOURCE[0]}")/core.bash"
+fi
+
+if declare -p ENABLE_DEV &>/dev/null; then
+    source "$(dirname "${BASH_SOURCE[0]}")/dev.bash"
+fi
+
+if declare -p ENABLE_SEC &>/dev/null; then
+    source "$(dirname "${BASH_SOURCE[0]}")/security.bash"
+fi
+
+if declare -p ENABLE_KDE &>/dev/null; then
+    source "$(dirname "${BASH_SOURCE[0]}")/kde.bash"
+fi
+
+if declare -p ENABLE_ESPIDF &>/dev/null; then
+   source "$(dirname "${BASH_SOURCE[0]}")/espidf.bash"
+fi
+
+if declare -p ENABLE_ROS2 &>/dev/null; then
+    source "$(dirname "${BASH_SOURCE[0]}")/ros2.bash"
+fi

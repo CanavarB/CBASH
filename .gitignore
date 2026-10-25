@@ -1,0 +1,6 @@
+.directory
+.vscode/
+build/
+test/
+*.o
+*.out
